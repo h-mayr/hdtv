@@ -1,0 +1,470 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hdtv._version &mdash; hdtv  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
+
+  
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="hdtv.app" href="../app/index.html" />
+    <link rel="prev" title="hdtv" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            hdtv
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../include_guide.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../include_tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">hdtv</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">hdtv._version</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../app/index.html">hdtv.app</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../backgroundmodels/index.html">hdtv.backgroundmodels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cal/index.html">hdtv.cal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cmdline/index.html">hdtv.cmdline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../color/index.html">hdtv.color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cut/index.html">hdtv.cut</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../database/index.html">hdtv.database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../drawable/index.html">hdtv.drawable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dummy/index.html">hdtv.dummy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../efficiency/index.html">hdtv.efficiency</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../fit/index.html">hdtv.fit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../fitpanel/index.html">hdtv.fitpanel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../fitter/index.html">hdtv.fitter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../fitxml/index.html">hdtv.fitxml</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../histogram/index.html">hdtv.histogram</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../hsluv/index.html">hdtv.hsluv</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../integral/index.html">hdtv.integral</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../marker/index.html">hdtv.marker</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrix/index.html">hdtv.matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../options/index.html">hdtv.options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../peakmodels/index.html">hdtv.peakmodels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../plugins/index.html">hdtv.plugins</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../rfile_utils/index.html">hdtv.rfile_utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../rootext/index.html">hdtv.rootext</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../session/index.html">hdtv.session</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../specreader/index.html">hdtv.specreader</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../spectrum/index.html">hdtv.spectrum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tabformat/index.html">hdtv.tabformat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ui/index.html">hdtv.ui</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../util/index.html">hdtv.util</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../weakref_proxy/index.html">hdtv.weakref_proxy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../window/index.html">hdtv.window</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#attributes">Attributes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#package-contents">Package Contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">hdtv</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">API Reference</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">hdtv</a></li>
+      <li class="breadcrumb-item active">hdtv._version</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/autoapi/hdtv/_version/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-hdtv._version">
+<span id="hdtv-version"></span><h1>hdtv._version<a class="headerlink" href="#module-hdtv._version" title="Link to this heading"></a></h1>
+<p>Git implementation of _version.py.</p>
+<section id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading"></a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv._version.LONG_VERSION_PY" title="hdtv._version.LONG_VERSION_PY"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LONG_VERSION_PY</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv._version.HANDLERS" title="hdtv._version.HANDLERS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HANDLERS</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="exceptions">
+<h2>Exceptions<a class="headerlink" href="#exceptions" title="Link to this heading"></a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv._version.NotThisMethod" title="hdtv._version.NotThisMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NotThisMethod</span></code></a></p></td>
+<td><p>Exception raised if a method is not valid for the current scenario.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Link to this heading"></a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv._version.VersioneerConfig" title="hdtv._version.VersioneerConfig"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VersioneerConfig</span></code></a></p></td>
+<td><p>Container for Versioneer configuration parameters.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading"></a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv._version.get_keywords" title="hdtv._version.get_keywords"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_keywords</span></code></a>(→ Dict[str, str])</p></td>
+<td><p>Get the keywords needed to look up the version information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv._version.get_config" title="hdtv._version.get_config"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_config</span></code></a>(→ VersioneerConfig)</p></td>
+<td><p>Create, populate and return the VersioneerConfig() object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv._version.register_vcs_handler" title="hdtv._version.register_vcs_handler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">register_vcs_handler</span></code></a>(→ Callable)</p></td>
+<td><p>Create decorator to mark a method as the handler of a VCS.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv._version.run_command" title="hdtv._version.run_command"><code class="xref py py-obj docutils literal notranslate"><span class="pre">run_command</span></code></a>(→ Tuple[Optional[str], Optional[int]])</p></td>
+<td><p>Call the given command(s).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv._version.versions_from_parentdir" title="hdtv._version.versions_from_parentdir"><code class="xref py py-obj docutils literal notranslate"><span class="pre">versions_from_parentdir</span></code></a>(→ Dict[str, Any])</p></td>
+<td><p>Try to determine the version from the parent directory name.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv._version.git_get_keywords" title="hdtv._version.git_get_keywords"><code class="xref py py-obj docutils literal notranslate"><span class="pre">git_get_keywords</span></code></a>(→ Dict[str, str])</p></td>
+<td><p>Extract version information from the given file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv._version.git_versions_from_keywords" title="hdtv._version.git_versions_from_keywords"><code class="xref py py-obj docutils literal notranslate"><span class="pre">git_versions_from_keywords</span></code></a>(→ Dict[str, Any])</p></td>
+<td><p>Get version information from git keywords.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv._version.git_pieces_from_vcs" title="hdtv._version.git_pieces_from_vcs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">git_pieces_from_vcs</span></code></a>(→ Dict[str, Any])</p></td>
+<td><p>Get version from 'git describe' in the root of the source tree.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv._version.plus_or_dot" title="hdtv._version.plus_or_dot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plus_or_dot</span></code></a>(→ str)</p></td>
+<td><p>Return a + if we don't already have one, else return a .</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv._version.render_pep440" title="hdtv._version.render_pep440"><code class="xref py py-obj docutils literal notranslate"><span class="pre">render_pep440</span></code></a>(→ str)</p></td>
+<td><p>Build up version string, with post-release &quot;local version identifier&quot;.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv._version.render_pep440_branch" title="hdtv._version.render_pep440_branch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">render_pep440_branch</span></code></a>(→ str)</p></td>
+<td><p>TAG[[.dev0]+DISTANCE.gHEX[.dirty]] .</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv._version.pep440_split_post" title="hdtv._version.pep440_split_post"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pep440_split_post</span></code></a>(→ Tuple[str, Optional[int]])</p></td>
+<td><p>Split pep440 version string at the post-release segment.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv._version.render_pep440_pre" title="hdtv._version.render_pep440_pre"><code class="xref py py-obj docutils literal notranslate"><span class="pre">render_pep440_pre</span></code></a>(→ str)</p></td>
+<td><p>TAG[.postN.devDISTANCE] -- No -dirty.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv._version.render_pep440_post" title="hdtv._version.render_pep440_post"><code class="xref py py-obj docutils literal notranslate"><span class="pre">render_pep440_post</span></code></a>(→ str)</p></td>
+<td><p>TAG[.postDISTANCE[.dev0]+gHEX] .</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv._version.render_pep440_post_branch" title="hdtv._version.render_pep440_post_branch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">render_pep440_post_branch</span></code></a>(→ str)</p></td>
+<td><p>TAG[.postDISTANCE[.dev0]+gHEX[.dirty]] .</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv._version.render_pep440_old" title="hdtv._version.render_pep440_old"><code class="xref py py-obj docutils literal notranslate"><span class="pre">render_pep440_old</span></code></a>(→ str)</p></td>
+<td><p>TAG[.postDISTANCE[.dev0]] .</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv._version.render_git_describe" title="hdtv._version.render_git_describe"><code class="xref py py-obj docutils literal notranslate"><span class="pre">render_git_describe</span></code></a>(→ str)</p></td>
+<td><p>TAG[-DISTANCE-gHEX][-dirty].</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv._version.render_git_describe_long" title="hdtv._version.render_git_describe_long"><code class="xref py py-obj docutils literal notranslate"><span class="pre">render_git_describe_long</span></code></a>(→ str)</p></td>
+<td><p>TAG-DISTANCE-gHEX[-dirty].</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv._version.render" title="hdtv._version.render"><code class="xref py py-obj docutils literal notranslate"><span class="pre">render</span></code></a>(→ Dict[str, Any])</p></td>
+<td><p>Render the given version pieces into the requested style.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv._version.get_versions" title="hdtv._version.get_versions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_versions</span></code></a>(→ Dict[str, Any])</p></td>
+<td><p>Get version information or return default if unable to do so.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv._version.get_keywords">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">get_keywords</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hdtv._version.get_keywords" title="Link to this definition"></a></dt>
+<dd><p>Get the keywords needed to look up the version information.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="hdtv._version.VersioneerConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">VersioneerConfig</span></span><a class="headerlink" href="#hdtv._version.VersioneerConfig" title="Link to this definition"></a></dt>
+<dd><p>Container for Versioneer configuration parameters.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hdtv._version.VersioneerConfig.VCS">
+<span class="sig-name descname"><span class="pre">VCS</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#hdtv._version.VersioneerConfig.VCS" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hdtv._version.VersioneerConfig.style">
+<span class="sig-name descname"><span class="pre">style</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#hdtv._version.VersioneerConfig.style" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hdtv._version.VersioneerConfig.tag_prefix">
+<span class="sig-name descname"><span class="pre">tag_prefix</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#hdtv._version.VersioneerConfig.tag_prefix" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hdtv._version.VersioneerConfig.parentdir_prefix">
+<span class="sig-name descname"><span class="pre">parentdir_prefix</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#hdtv._version.VersioneerConfig.parentdir_prefix" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hdtv._version.VersioneerConfig.versionfile_source">
+<span class="sig-name descname"><span class="pre">versionfile_source</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#hdtv._version.VersioneerConfig.versionfile_source" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hdtv._version.VersioneerConfig.verbose">
+<span class="sig-name descname"><span class="pre">verbose</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#hdtv._version.VersioneerConfig.verbose" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv._version.get_config">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">get_config</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#hdtv._version.VersioneerConfig" title="hdtv._version.VersioneerConfig"><span class="pre">VersioneerConfig</span></a></span></span><a class="headerlink" href="#hdtv._version.get_config" title="Link to this definition"></a></dt>
+<dd><p>Create, populate and return the VersioneerConfig() object.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="hdtv._version.NotThisMethod">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">NotThisMethod</span></span><a class="headerlink" href="#hdtv._version.NotThisMethod" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-obj docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Exception raised if a method is not valid for the current scenario.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="hdtv._version.LONG_VERSION_PY">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">LONG_VERSION_PY</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#hdtv._version.LONG_VERSION_PY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="hdtv._version.HANDLERS">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">HANDLERS</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Callable</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#hdtv._version.HANDLERS" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv._version.register_vcs_handler">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">register_vcs_handler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vcs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Callable</span></span></span><a class="headerlink" href="#hdtv._version.register_vcs_handler" title="Link to this definition"></a></dt>
+<dd><p>Create decorator to mark a method as the handler of a VCS.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv._version.run_command">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">run_command</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commands</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cwd</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hide_stderr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">env</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hdtv._version.run_command" title="Link to this definition"></a></dt>
+<dd><p>Call the given command(s).</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv._version.versions_from_parentdir">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">versions_from_parentdir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parentdir_prefix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">root</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hdtv._version.versions_from_parentdir" title="Link to this definition"></a></dt>
+<dd><p>Try to determine the version from the parent directory name.</p>
+<p>Source tarballs conventionally unpack into a directory that includes both
+the project name and a version string. We will also support searching up
+two directory levels for an appropriately named parent directory</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv._version.git_get_keywords">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">git_get_keywords</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">versionfile_abs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hdtv._version.git_get_keywords" title="Link to this definition"></a></dt>
+<dd><p>Extract version information from the given file.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv._version.git_versions_from_keywords">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">git_versions_from_keywords</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keywords</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag_prefix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hdtv._version.git_versions_from_keywords" title="Link to this definition"></a></dt>
+<dd><p>Get version information from git keywords.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv._version.git_pieces_from_vcs">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">git_pieces_from_vcs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tag_prefix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">root</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">runner</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">run_command</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hdtv._version.git_pieces_from_vcs" title="Link to this definition"></a></dt>
+<dd><p>Get version from ‘git describe’ in the root of the source tree.</p>
+<p>This only gets called if the git-archive ‘subst’ keywords were <em>not</em>
+expanded, and _version.py hasn’t already been rewritten with a short
+version string, meaning we’re inside a checked out source tree.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv._version.plus_or_dot">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">plus_or_dot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pieces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#hdtv._version.plus_or_dot" title="Link to this definition"></a></dt>
+<dd><p>Return a + if we don’t already have one, else return a .</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv._version.render_pep440">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">render_pep440</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pieces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#hdtv._version.render_pep440" title="Link to this definition"></a></dt>
+<dd><p>Build up version string, with post-release “local version identifier”.</p>
+<p>Our goal: TAG[+DISTANCE.gHEX[.dirty]] . Note that if you
+get a tagged build and then dirty it, you’ll get TAG+0.gHEX.dirty</p>
+<p>Exceptions:
+1: no tags. git_describe was just HEX. 0+untagged.DISTANCE.gHEX[.dirty]</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv._version.render_pep440_branch">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">render_pep440_branch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pieces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#hdtv._version.render_pep440_branch" title="Link to this definition"></a></dt>
+<dd><p>TAG[[.dev0]+DISTANCE.gHEX[.dirty]] .</p>
+<p>The “.dev0” means not master branch. Note that .dev0 sorts backwards
+(a feature branch will appear “older” than the master branch).</p>
+<p>Exceptions:
+1: no tags. 0[.dev0]+untagged.DISTANCE.gHEX[.dirty]</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv._version.pep440_split_post">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">pep440_split_post</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ver</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hdtv._version.pep440_split_post" title="Link to this definition"></a></dt>
+<dd><p>Split pep440 version string at the post-release segment.</p>
+<p>Returns the release segments before the post-release and the
+post-release version number (or -1 if no post-release segment is present).</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv._version.render_pep440_pre">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">render_pep440_pre</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pieces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#hdtv._version.render_pep440_pre" title="Link to this definition"></a></dt>
+<dd><p>TAG[.postN.devDISTANCE] – No -dirty.</p>
+<p>Exceptions:
+1: no tags. 0.post0.devDISTANCE</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv._version.render_pep440_post">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">render_pep440_post</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pieces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#hdtv._version.render_pep440_post" title="Link to this definition"></a></dt>
+<dd><p>TAG[.postDISTANCE[.dev0]+gHEX] .</p>
+<p>The “.dev0” means dirty. Note that .dev0 sorts backwards
+(a dirty tree will appear “older” than the corresponding clean one),
+but you shouldn’t be releasing software with -dirty anyways.</p>
+<p>Exceptions:
+1: no tags. 0.postDISTANCE[.dev0]</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv._version.render_pep440_post_branch">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">render_pep440_post_branch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pieces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#hdtv._version.render_pep440_post_branch" title="Link to this definition"></a></dt>
+<dd><p>TAG[.postDISTANCE[.dev0]+gHEX[.dirty]] .</p>
+<p>The “.dev0” means not master branch.</p>
+<p>Exceptions:
+1: no tags. 0.postDISTANCE[.dev0]+gHEX[.dirty]</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv._version.render_pep440_old">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">render_pep440_old</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pieces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#hdtv._version.render_pep440_old" title="Link to this definition"></a></dt>
+<dd><p>TAG[.postDISTANCE[.dev0]] .</p>
+<p>The “.dev0” means dirty.</p>
+<p>Exceptions:
+1: no tags. 0.postDISTANCE[.dev0]</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv._version.render_git_describe">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">render_git_describe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pieces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#hdtv._version.render_git_describe" title="Link to this definition"></a></dt>
+<dd><p>TAG[-DISTANCE-gHEX][-dirty].</p>
+<p>Like ‘git describe –tags –dirty –always’.</p>
+<p>Exceptions:
+1: no tags. HEX[-dirty]  (note: no ‘g’ prefix)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv._version.render_git_describe_long">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">render_git_describe_long</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pieces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#hdtv._version.render_git_describe_long" title="Link to this definition"></a></dt>
+<dd><p>TAG-DISTANCE-gHEX[-dirty].</p>
+<p>Like ‘git describe –tags –dirty –always -long’.
+The distance/hash is unconditional.</p>
+<p>Exceptions:
+1: no tags. HEX[-dirty]  (note: no ‘g’ prefix)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv._version.render">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">render</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pieces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hdtv._version.render" title="Link to this definition"></a></dt>
+<dd><p>Render the given version pieces into the requested style.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv._version.get_versions">
+<span class="sig-prename descclassname"><span class="pre">hdtv._version.</span></span><span class="sig-name descname"><span class="pre">get_versions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hdtv._version.get_versions" title="Link to this definition"></a></dt>
+<dd><p>Get version information or return default if unable to do so.</p>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="hdtv" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../app/index.html" class="btn btn-neutral float-right" title="hdtv.app" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, IKP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

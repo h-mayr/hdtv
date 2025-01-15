@@ -1,0 +1,524 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hdtv.hsluv &mdash; hdtv  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
+
+  
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="hdtv.integral" href="../integral/index.html" />
+    <link rel="prev" title="hdtv.histogram" href="../histogram/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            hdtv
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../include_guide.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../include_tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">hdtv</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../_version/index.html">hdtv._version</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../app/index.html">hdtv.app</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../backgroundmodels/index.html">hdtv.backgroundmodels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cal/index.html">hdtv.cal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cmdline/index.html">hdtv.cmdline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../color/index.html">hdtv.color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cut/index.html">hdtv.cut</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../database/index.html">hdtv.database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../drawable/index.html">hdtv.drawable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dummy/index.html">hdtv.dummy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../efficiency/index.html">hdtv.efficiency</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../fit/index.html">hdtv.fit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../fitpanel/index.html">hdtv.fitpanel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../fitter/index.html">hdtv.fitter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../fitxml/index.html">hdtv.fitxml</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../histogram/index.html">hdtv.histogram</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">hdtv.hsluv</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../integral/index.html">hdtv.integral</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../marker/index.html">hdtv.marker</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrix/index.html">hdtv.matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../options/index.html">hdtv.options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../peakmodels/index.html">hdtv.peakmodels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../plugins/index.html">hdtv.plugins</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../rfile_utils/index.html">hdtv.rfile_utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../rootext/index.html">hdtv.rootext</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../session/index.html">hdtv.session</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../specreader/index.html">hdtv.specreader</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../spectrum/index.html">hdtv.spectrum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tabformat/index.html">hdtv.tabformat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ui/index.html">hdtv.ui</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../util/index.html">hdtv.util</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../weakref_proxy/index.html">hdtv.weakref_proxy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../window/index.html">hdtv.window</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#attributes">Attributes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#package-contents">Package Contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">hdtv</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">API Reference</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">hdtv</a></li>
+      <li class="breadcrumb-item active">hdtv.hsluv</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/autoapi/hdtv/hsluv/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-hdtv.hsluv">
+<span id="hdtv-hsluv"></span><h1>hdtv.hsluv<a class="headerlink" href="#module-hdtv.hsluv" title="Link to this heading"></a></h1>
+<p>This module is generated by transpiling Haxe into Python and cleaning
+the resulting code by hand, e.g. removing unused Haxe classes. To try it
+yourself, clone <a class="reference external" href="https://github.com/hsluv/hsluv">https://github.com/hsluv/hsluv</a> and run:</p>
+<blockquote>
+<div><p>haxe -cp haxe/src hsluv.Hsluv -python hsluv.py</p>
+</div></blockquote>
+<section id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading"></a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv.__version__" title="hdtv.hsluv.__version__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__version__</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv.hsluv._m" title="hdtv.hsluv._m"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_m</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv._min_v" title="hdtv.hsluv._min_v"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_min_v</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv.hsluv._ref_y" title="hdtv.hsluv._ref_y"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_ref_y</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv._ref_u" title="hdtv.hsluv._ref_u"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_ref_u</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv.hsluv._ref_v" title="hdtv.hsluv._ref_v"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_ref_v</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv._kappa" title="hdtv.hsluv._kappa"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_kappa</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv.hsluv._epsilon" title="hdtv.hsluv._epsilon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_epsilon</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv.hsluv_to_rgb" title="hdtv.hsluv.hsluv_to_rgb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hsluv_to_rgb</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv.hsluv.hpluv_to_rgb" title="hdtv.hsluv.hpluv_to_rgb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hpluv_to_rgb</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading"></a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv._normalize_output" title="hdtv.hsluv._normalize_output"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_normalize_output</span></code></a>(conversion)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv.hsluv._distance_line_from_origin" title="hdtv.hsluv._distance_line_from_origin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_distance_line_from_origin</span></code></a>(line)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv._length_of_ray_until_intersect" title="hdtv.hsluv._length_of_ray_until_intersect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_length_of_ray_until_intersect</span></code></a>(theta, line)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv.hsluv._get_bounds" title="hdtv.hsluv._get_bounds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_get_bounds</span></code></a>(l)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv._max_safe_chroma_for_l" title="hdtv.hsluv._max_safe_chroma_for_l"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_max_safe_chroma_for_l</span></code></a>(l)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv.hsluv._max_chroma_for_lh" title="hdtv.hsluv._max_chroma_for_lh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_max_chroma_for_lh</span></code></a>(l, h)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv._dot_product" title="hdtv.hsluv._dot_product"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_dot_product</span></code></a>(a, b)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv.hsluv._from_linear" title="hdtv.hsluv._from_linear"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_from_linear</span></code></a>(c)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv._to_linear" title="hdtv.hsluv._to_linear"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_to_linear</span></code></a>(c)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv.hsluv._y_to_l" title="hdtv.hsluv._y_to_l"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_y_to_l</span></code></a>(y)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv._l_to_y" title="hdtv.hsluv._l_to_y"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_l_to_y</span></code></a>(l)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv.hsluv.xyz_to_rgb" title="hdtv.hsluv.xyz_to_rgb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyz_to_rgb</span></code></a>(_hx_tuple)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv.rgb_to_xyz" title="hdtv.hsluv.rgb_to_xyz"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rgb_to_xyz</span></code></a>(_hx_tuple)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv.hsluv.xyz_to_luv" title="hdtv.hsluv.xyz_to_luv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyz_to_luv</span></code></a>(_hx_tuple)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv.luv_to_xyz" title="hdtv.hsluv.luv_to_xyz"><code class="xref py py-obj docutils literal notranslate"><span class="pre">luv_to_xyz</span></code></a>(_hx_tuple)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv.hsluv.luv_to_lch" title="hdtv.hsluv.luv_to_lch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">luv_to_lch</span></code></a>(_hx_tuple)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv.lch_to_luv" title="hdtv.hsluv.lch_to_luv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lch_to_luv</span></code></a>(_hx_tuple)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv.hsluv.hsluv_to_lch" title="hdtv.hsluv.hsluv_to_lch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hsluv_to_lch</span></code></a>(_hx_tuple)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv.lch_to_hsluv" title="hdtv.hsluv.lch_to_hsluv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lch_to_hsluv</span></code></a>(_hx_tuple)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv.hsluv.hpluv_to_lch" title="hdtv.hsluv.hpluv_to_lch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hpluv_to_lch</span></code></a>(_hx_tuple)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv.lch_to_hpluv" title="hdtv.hsluv.lch_to_hpluv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lch_to_hpluv</span></code></a>(_hx_tuple)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv.hsluv.rgb_to_hex" title="hdtv.hsluv.rgb_to_hex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rgb_to_hex</span></code></a>(_hx_tuple)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv.hex_to_rgb" title="hdtv.hsluv.hex_to_rgb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hex_to_rgb</span></code></a>(_hex)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv.hsluv.lch_to_rgb" title="hdtv.hsluv.lch_to_rgb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lch_to_rgb</span></code></a>(_hx_tuple)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv.rgb_to_lch" title="hdtv.hsluv.rgb_to_lch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rgb_to_lch</span></code></a>(_hx_tuple)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv.hsluv._hsluv_to_rgb" title="hdtv.hsluv._hsluv_to_rgb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_hsluv_to_rgb</span></code></a>(_hx_tuple)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv.rgb_to_hsluv" title="hdtv.hsluv.rgb_to_hsluv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rgb_to_hsluv</span></code></a>(_hx_tuple)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv.hsluv._hpluv_to_rgb" title="hdtv.hsluv._hpluv_to_rgb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_hpluv_to_rgb</span></code></a>(_hx_tuple)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv.rgb_to_hpluv" title="hdtv.hsluv.rgb_to_hpluv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rgb_to_hpluv</span></code></a>(_hx_tuple)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv.hsluv.hsluv_to_hex" title="hdtv.hsluv.hsluv_to_hex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hsluv_to_hex</span></code></a>(_hx_tuple)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv.hpluv_to_hex" title="hdtv.hsluv.hpluv_to_hex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hpluv_to_hex</span></code></a>(_hx_tuple)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#hdtv.hsluv.hex_to_hsluv" title="hdtv.hsluv.hex_to_hsluv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hex_to_hsluv</span></code></a>(s)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#hdtv.hsluv.hex_to_hpluv" title="hdtv.hsluv.hex_to_hpluv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hex_to_hpluv</span></code></a>(s)</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading"></a></h2>
+<dl class="py data">
+<dt class="sig sig-object py" id="hdtv.hsluv.__version__">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">__version__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'5.0.0'</span></em><a class="headerlink" href="#hdtv.hsluv.__version__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="hdtv.hsluv._m">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">_m</span></span><a class="headerlink" href="#hdtv.hsluv._m" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="hdtv.hsluv._min_v">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">_min_v</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[[0.41239079926595,</span> <span class="pre">0.35758433938387,</span> <span class="pre">0.18048078840183],</span> <span class="pre">[0.21263900587151,</span> <span class="pre">0.71516867876775,...</span></em><a class="headerlink" href="#hdtv.hsluv._min_v" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="hdtv.hsluv._ref_y">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">_ref_y</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1.0</span></em><a class="headerlink" href="#hdtv.hsluv._ref_y" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="hdtv.hsluv._ref_u">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">_ref_u</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.19783000664283</span></em><a class="headerlink" href="#hdtv.hsluv._ref_u" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="hdtv.hsluv._ref_v">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">_ref_v</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.46831999493879</span></em><a class="headerlink" href="#hdtv.hsluv._ref_v" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="hdtv.hsluv._kappa">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">_kappa</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">903.2962962</span></em><a class="headerlink" href="#hdtv.hsluv._kappa" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="hdtv.hsluv._epsilon">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">_epsilon</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0088564516</span></em><a class="headerlink" href="#hdtv.hsluv._epsilon" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv._normalize_output">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">_normalize_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">conversion</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv._normalize_output" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv._distance_line_from_origin">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">_distance_line_from_origin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv._distance_line_from_origin" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv._length_of_ray_until_intersect">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">_length_of_ray_until_intersect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">theta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv._length_of_ray_until_intersect" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv._get_bounds">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">_get_bounds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv._get_bounds" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv._max_safe_chroma_for_l">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">_max_safe_chroma_for_l</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv._max_safe_chroma_for_l" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv._max_chroma_for_lh">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">_max_chroma_for_lh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv._max_chroma_for_lh" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv._dot_product">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">_dot_product</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv._dot_product" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv._from_linear">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">_from_linear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv._from_linear" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv._to_linear">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">_to_linear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv._to_linear" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv._y_to_l">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">_y_to_l</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv._y_to_l" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv._l_to_y">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">_l_to_y</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv._l_to_y" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv.xyz_to_rgb">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">xyz_to_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_hx_tuple</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv.xyz_to_rgb" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv.rgb_to_xyz">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">rgb_to_xyz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_hx_tuple</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv.rgb_to_xyz" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv.xyz_to_luv">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">xyz_to_luv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_hx_tuple</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv.xyz_to_luv" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv.luv_to_xyz">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">luv_to_xyz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_hx_tuple</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv.luv_to_xyz" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv.luv_to_lch">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">luv_to_lch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_hx_tuple</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv.luv_to_lch" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv.lch_to_luv">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">lch_to_luv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_hx_tuple</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv.lch_to_luv" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv.hsluv_to_lch">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">hsluv_to_lch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_hx_tuple</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv.hsluv_to_lch" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv.lch_to_hsluv">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">lch_to_hsluv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_hx_tuple</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv.lch_to_hsluv" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv.hpluv_to_lch">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">hpluv_to_lch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_hx_tuple</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv.hpluv_to_lch" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv.lch_to_hpluv">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">lch_to_hpluv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_hx_tuple</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv.lch_to_hpluv" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv.rgb_to_hex">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">rgb_to_hex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_hx_tuple</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv.rgb_to_hex" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv.hex_to_rgb">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">hex_to_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_hex</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv.hex_to_rgb" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv.lch_to_rgb">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">lch_to_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_hx_tuple</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv.lch_to_rgb" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv.rgb_to_lch">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">rgb_to_lch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_hx_tuple</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv.rgb_to_lch" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv._hsluv_to_rgb">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">_hsluv_to_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_hx_tuple</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv._hsluv_to_rgb" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="hdtv.hsluv.hsluv_to_rgb">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">hsluv_to_rgb</span></span><a class="headerlink" href="#hdtv.hsluv.hsluv_to_rgb" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv.rgb_to_hsluv">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">rgb_to_hsluv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_hx_tuple</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv.rgb_to_hsluv" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv._hpluv_to_rgb">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">_hpluv_to_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_hx_tuple</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv._hpluv_to_rgb" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="hdtv.hsluv.hpluv_to_rgb">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">hpluv_to_rgb</span></span><a class="headerlink" href="#hdtv.hsluv.hpluv_to_rgb" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv.rgb_to_hpluv">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">rgb_to_hpluv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_hx_tuple</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv.rgb_to_hpluv" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv.hsluv_to_hex">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">hsluv_to_hex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_hx_tuple</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv.hsluv_to_hex" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv.hpluv_to_hex">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">hpluv_to_hex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_hx_tuple</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv.hpluv_to_hex" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv.hex_to_hsluv">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">hex_to_hsluv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv.hex_to_hsluv" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hdtv.hsluv.hex_to_hpluv">
+<span class="sig-prename descclassname"><span class="pre">hdtv.hsluv.</span></span><span class="sig-name descname"><span class="pre">hex_to_hpluv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hdtv.hsluv.hex_to_hpluv" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../histogram/index.html" class="btn btn-neutral float-left" title="hdtv.histogram" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../integral/index.html" class="btn btn-neutral float-right" title="hdtv.integral" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, IKP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
